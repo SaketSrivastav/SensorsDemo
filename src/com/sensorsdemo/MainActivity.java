@@ -36,12 +36,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 		mSensorValuesZDown = (TextView) findViewById(R.id.txtSensorZValueDown);
 
 		mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-		List<Sensor> mSensorList = mSensorManager
-				.getSensorList(Sensor.TYPE_ALL);
-
-		for (Sensor sensor : mSensorList) {
-			System.out.println(sensor.getName());
-		}
+		
 		mAccelerometer = mSensorManager
 				.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
