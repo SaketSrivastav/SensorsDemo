@@ -103,4 +103,11 @@ public class MainActivity extends Activity implements SensorEventListener {
 		mSensorManager.registerListener(this, mAccelerometer,
 				SensorManager.SENSOR_DELAY_UI);
 	}
+	
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		mSensorManager.unregisterListener(this);
+	}
 }
