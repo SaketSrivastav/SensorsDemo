@@ -88,4 +88,19 @@ public class MainActivity extends Activity implements SensorEventListener {
 					+ Integer.toString((int) z * -1));
 		}
 	}
+
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		mSensorManager.unregisterListener(this);
+	}
+
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		mSensorManager.registerListener(this, mAccelerometer,
+				SensorManager.SENSOR_DELAY_UI);
+	}
 }

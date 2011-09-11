@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
     <string name="hello">Hello World</string>
-    <string name="app_name">SensorsDemo</string>
+    <string name="app_name">Accelerometer Values</string>
     <string name="x_axis">X - AXIS</string>
     <string name="y_axis">Y -AXIS</string>
     <string name="z_axis">Z - AXIS</string>
