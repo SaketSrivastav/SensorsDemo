@@ -2,4 +2,7 @@
 <resources>
     <string name="hello">Hello World</string>
     <string name="app_name">SensorsDemo</string>
+    <string name="x_axis">X - AXIS</string>
+    <string name="y_axis">Y -AXIS</string>
+    <string name="z_axis">Z - AXIS</string>
 </resources>
