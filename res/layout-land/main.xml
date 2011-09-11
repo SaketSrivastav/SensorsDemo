@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:layout_gravity="center"
+	android:background="@android:color/white">
+	<TextView android:layout_width="match_parent" android:text="@string/x_axis"
+		android:layout_height="wrap_content" android:gravity="center"
+		android:textSize="25sp" android:padding="10dip" android:textColor="@android:color/black" />
+	<LinearLayout android:id="@+id/x_axis"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:background="@android:color/black">
+		<TextView android:text="X-AXIS (+)ve:" android:layout_width="wrap_content"
+			android:id="@+id/txtSensorValueLeft" android:textSize="30dip"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:gravity="left"></TextView>
+		<TextView android:layout_width="wrap_content" android:text="X-AXIS (-)ve:"
+			android:textSize="30dip" android:layout_weight="1"
+			android:id="@+id/txtSensorValueRight" android:layout_height="wrap_content"
+			android:gravity="right" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="@android:color/black"
+		android:padding="5dip">
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<TextView android:layout_width="wrap_content" android:text="@string/y_axis"
+			android:layout_height="wrap_content" android:gravity="left" android:layout_weight="1"
+			android:textSize="25sp" android:padding="10dip" android:textColor="@android:color/black" />
+		<TextView android:layout_width="wrap_content" android:text="@string/z_axis"
+			android:layout_height="wrap_content" android:gravity="right" android:layout_weight="1"
+			android:textSize="25sp" android:padding="10dip" android:textColor="@android:color/black" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<LinearLayout android:id="@+id/y_axis"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="vertical" android:gravity="left" android:layout_weight="1"
+			android:background="@android:color/black">
+			<TextView android:layout_width="wrap_content" android:text="Y-AXIS (+)ve:"
+				android:layout_height="wrap_content" android:textSize="30dip"
+				android:layout_weight="1" android:id="@+id/txtSensorValueUp"
+				android:gravity="center" />
+			<TextView android:layout_width="wrap_content" android:text="Y-AXIS (-)ve:"
+				android:layout_height="wrap_content" android:textSize="30dip"
+				android:layout_weight="1" android:id="@+id/txtSensorValueDown"
+				android:gravity="center" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/z_axis" android:layout_weight="1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="vertical" android:gravity="right"
+			android:background="@android:color/black">
+			<TextView android:layout_width="wrap_content" android:text="Z-AXIS (+)ve"
+				android:layout_height="wrap_content" android:textSize="30dip"
+				android:layout_weight="1" android:id="@+id/txtSensorZValueUp" />
+			<TextView android:layout_width="wrap_content" android:text="Z-AXIS (-)ve"
+				android:layout_height="wrap_content" android:textSize="30dip"
+				android:layout_weight="1" android:id="@+id/txtSensorZValueDown" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
